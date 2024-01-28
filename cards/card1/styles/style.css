@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "sora", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --clr-body: #FAFAF9;
+    --clr-white: #FFFFFF;
+    --clr-gray: #6C727F;
+    --clr-purple: #883AE1;
+    --clr-pink: #E6D6FC;
+    --card-width: 400px
+}
+
+body {
+    background-color: var(--clr-body);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 164px;
+}
+
+
+
+.card {
+    width: var(--card-width);
+    background-color: var(--clr-white) ;
+    padding: 16px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card .image img {
+    width: calc(var(--card-width) - 32px);
+    border-radius: 16px;
+}
+
+.card .tags {
+    margin: 16px 0;
+}
+.card .tags a {
+    text-decoration: none;
+    color: var(--clr-purple);
+    background-color: var(--clr-pink);
+    font-size: 10px;
+    font-weight: 700;
+    border-radius: 50px;
+    padding: 6px 12px;
+}
+
+.card .content h2 {
+    margin-bottom: 6px; 
+    font: 18px
+}
+.card .content p {
+    font: 14px;
+    color: var(--clr-gray);
+}
+
+.card .content hr {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #E5EAF0;
+    width: calc(100% + 32px);
+    margin-left: -4%;
+}
+
+.card .content h3 {
+    font-size: 12px;
+    color: var(--clr-gray);
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
