@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #1a1f23;
+  font-size: 0.928rem;
+  font-family: "Sora", sans-serif; }
+
+body {
+  background-color: #eee;
+  padding: 3rem 0; }
+
+.container {
+  min-height: 100vb;
+  margin: auto;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap; }
+  .container .card {
+    background: linear-gradient(45deg, hsl(var(--hue), 50%, 80%), #382e2e, hsl(var(--hue), 40%, 50%));
+    border-radius: 12px;
+    border: 5px solid transparent; }
+    .container .card .layer-1 {
+      background-color: hsl(var(--hue), 10%, 10%);
+      height: 400px;
+      width: 300px; }
+      .container .card .layer-1 .layer-2, .container .card .layer-1 .content {
+        height: 50%; }
+      .container .card .layer-1 .layer-2 {
+        background-color: lightpink; }
+
+/*# sourceMappingURL=style.css.map */

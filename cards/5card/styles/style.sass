@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap')
+
+* 
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    color: hsl(210, 16%, 12%)
+    font-size: .928rem
+    font-family: 'Sora', sans-serif
+
+body 
+    background-color: #eee
+    padding: 3rem 0
+
+.container
+    min-height: 100vb
+    margin: auto
+    width: 90%
+
+    // display: grid
+    // grid-template-columns: repeat(3, 300px)
+    // grid-template-rows: repeat(3, 500px)
+    // gap: 50px
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 50px
+    flex-wrap: wrap
+
+    .card
+        height: 500px
+        width: 300px
+        background-color: hsl(120, 0%, 0%)
+        border-radius: 12px
+        &:hover
+            // background:  linear-gradient(hsla(203, 40%, 30%, .4))
+            background: linear-gradient(45deg, black 20% ,hsla(var(--hue), 40%, 30%, .4),  )
+
+        .imgBx
+            position: relative
+            background-color: hsla(var(--hue), 40%, 30%, .4)
+            height: 50%
+
+            .sec-1
+                box-shadow: 0 0 20px 20px hsla(var(--hue), 40%, 50%, .4)
+                background-color: hsla(var(--hue    ), 40%, 40%, .7)
+                height: 60%
+                width: 60%
+            .sec-2
+                position: absolute
+                background-color: hsla(var(--hue), 20%, 50%, 1)
+                height: 35%
+                width: 35%
+                color: #fff
+                font-size: 4rem
+                font-weight: 800
+        .content
+            padding: 2em
+            text-align: center
+            .title
+                font-size: 1.8rem
+                font-weight: 700
+                color: #fff !important
+            .descrition
+                margin-top: 20px
+                font-size: .94rem
+                color: #f2f3f3 !important
+            .btn
+                font-size: 1rem
+                font-weight: 700
+                text-decoration: none
+                display: inline-block
+                margin-top: 20px
+                background-color: white 
+                padding: 1rem 1.4rem
+                border-radius: 3px
+                // transition: .3s
+                &:hover
+                    outline: 7px solid hsl(var(--hue), 40%,30%)
+                    // transform: scale(1.1)
+
+.imgBx, .sec-1, .sec-2
+    border-radius: 8px
+    display: flex
+    justify-content: center
+    align-items: center 

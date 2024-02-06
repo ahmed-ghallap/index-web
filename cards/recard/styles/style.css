@@ -1,0 +1,88 @@
+/* بسم الله */
+/* fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+
+/* basic colors */
+
+/* setup of the page */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'sora', sans-serif;
+}
+
+body {
+    min-height: 100vb;
+    background: linear-gradient(30deg, yellowgreen, lightblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    height: 300px;
+    border: 1px solid green;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 200px;
+    /* display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 3; */
+}
+.container .card {
+    position: relative;
+    background-color: white;
+    height: 100px;
+    width: 300px;
+    border-radius: 12px;
+    transition: .5s;
+    overflow: hidden;
+}
+
+.container .card .imgBx {
+    background-color: black;
+    border-radius: 12px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .card .imgBx i {
+    font-size: 4rem;
+    color: lightblue;
+    box-shadow: 0 1px 18px 2px lightblue;
+    border-radius: 100%;
+}
+
+.container .card:hover {
+    height: 250px;
+}
+
+.container .card .content {
+    text-align: center;
+}
+.container .card .content h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: blue;
+    margin: 20px;
+}
+.container .card .content p {
+    font-size: .7rem    ; 
+    margin-bottom: 1px;
+}
+.container .card .content a {
+    display: inline-block;
+    text-decoration: none;
+    padding: .8em;
+    font-weight: 800;
+    color: white;
+    background-color: rgb(35, 58, 125);
+    box-shadow: 0 1px 20px 2px rgba(39, 32, 135, 0.9)
+}

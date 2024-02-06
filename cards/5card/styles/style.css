@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #1a1f23;
+  font-size: 0.928rem;
+  font-family: "Sora", sans-serif; }
+
+body {
+  background-color: #eee;
+  padding: 3rem 0; }
+
+.container {
+  min-height: 100vb;
+  margin: auto;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap; }
+  .container .card {
+    height: 500px;
+    width: 300px;
+    background-color: black;
+    border-radius: 12px; }
+    .container .card:hover {
+      background: linear-gradient(45deg, black 20%, hsla(var(--hue), 40%, 30%, 0.4)); }
+    .container .card .imgBx {
+      position: relative;
+      background-color: hsla(var(--hue), 40%, 30%, 0.4);
+      height: 50%; }
+      .container .card .imgBx .sec-1 {
+        box-shadow: 0 0 20px 20px hsla(var(--hue), 40%, 50%, 0.4);
+        background-color: hsla(var(--hue), 40%, 40%, 0.7);
+        height: 60%;
+        width: 60%; }
+      .container .card .imgBx .sec-2 {
+        position: absolute;
+        background-color: hsla(var(--hue), 20%, 50%, 1);
+        height: 35%;
+        width: 35%;
+        color: #fff;
+        font-size: 4rem;
+        font-weight: 800; }
+    .container .card .content {
+      padding: 2em;
+      text-align: center; }
+      .container .card .content .title {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #fff !important; }
+      .container .card .content .descrition {
+        margin-top: 20px;
+        font-size: 0.94rem;
+        color: #f2f3f3 !important; }
+      .container .card .content .btn {
+        font-size: 1rem;
+        font-weight: 700;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 20px;
+        background-color: white;
+        padding: 1rem 1.4rem;
+        border-radius: 3px; }
+        .container .card .content .btn:hover {
+          outline: 7px solid hsl(var(--hue), 40%, 30%); }
+
+.imgBx, .sec-1, .sec-2 {
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+/*# sourceMappingURL=style.css.map */

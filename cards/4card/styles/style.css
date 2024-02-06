@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Sora", sans-serif; }
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #eee;
+  min-height: 100vb;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.container {
+  width: 80%;
+  margin: auto; }
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-content: center;
+  align-items: center; }
+  .container .card {
+    position: relative;
+    height: 400px;
+    width: 300px;
+    background-color: #000;
+    border-radius: 12px;
+    overflow: visible; }
+    .container .card:hover {
+      overflow: hidden; }
+      .container .card:hover .content {
+        bottom: 15px;
+        opacity: 1; }
+    .container .card .content {
+      border-radius: 8px;
+      height: 90px;
+      width: 90%;
+      left: 0;
+      right: 0;
+      margin-inline: auto;
+      background-color: white;
+      transition: all 0.7s;
+      position: absolute;
+      bottom: -110px;
+      opacity: 0;
+      box-shadow: 0 8px 24px hsls(0, 0%, 0%, 0.15);
+      padding: 0.7rem 1.5rem;
+      text-align: center; }
+      .container .card .content .name {
+        font-size: 0.9rem;
+        color: #aaa; }
+      .container .card .content .title {
+        font-weight: 500; }
+      .container .card .content .btn {
+        text-decoration: none;
+        font-weight: 500;
+        color: #3d6714; }
+    .container .card .imgBx {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 12px;
+      overflow: hidden; }
+      .container .card .imgBx img {
+        display: flex;
+        width: 100%;
+        height: 100%; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap')
+
+* 
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    color: hsl(210, 16%, 12%)
+    font-size: .928rem
+    font-family: 'Sora', sans-serif
+
+body 
+    background-color: #eee
+    padding: 3rem 0
+
+.container
+    min-height: 100vb
+    margin: auto
+    width: 90%
+
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 50px
+    flex-wrap: wrap
+
+    .card
+        background: linear-gradient(45deg, hsl(var(--hue), 50%, 80%) , hsl(0, 10%, 20%) , hsl(var(--hue), 40%, 50%)) 
+        border-radius: 12px
+        border: 5px solid transparent
+        .layer-1
+            background-color: hsl(var(--hue), 10%, 10%) ,
+            height: 400px
+            width: 300px
+            
+            .layer-2, .content
+                height: 50%
+            .layer-2
+                background-color: lightpink
