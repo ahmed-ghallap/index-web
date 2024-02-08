@@ -1,0 +1,66 @@
+//  بسم الله
+@import 'var'
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap')
+
+* 
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    font-family: 'Sora', sans-serif
+
+ul
+    list-style: none
+a
+    text-decoration: none
+body
+    background: $body-clr
+
+
+// ===== Start navbar ======
+
+header 
+    display: flex
+    justify-content: center
+    // align-items: center 
+    .nav
+        display: flex
+        gap: 25px
+        // align-items: center 
+        font-size: 1.1rem
+        padding: 1.3em 1.5em 
+
+        color: #fff
+        background-color: $primary-clr
+        border-radius: 0 0 20px 20px
+        .nav__item:hover , .nav__item:focus
+            background: $primary-clr-light
+
+        .nav__item
+            display: flex
+            justify-content: center
+            align-items: center
+
+            border-radius: 12px
+            padding: .5em 1em
+            width: 8em
+            height: 2.5em
+            transition: all .5s ease
+            i
+                font-size: 1.7rem
+            .icon__text
+                margin-left: 9px
+                font-weight: 500
+
+@media screen and (max-width: 565px) 
+    html
+        font-size: 12px
+    body
+        background: white
+
+@media screen and (max-width: 445px) 
+    html
+        font-size: 8px
+    body
+        background: white
+
+// ===== End navbar ======

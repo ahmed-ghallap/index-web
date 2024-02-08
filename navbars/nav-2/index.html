@@ -1,0 +1,43 @@
+<!-- بسم الله -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+        rel="stylesheet"
+    />
+    <title>Nav Bar Verticley</title>
+</head>
+<body>
+    <header>
+        <!-- Start nav -->
+        <div class="nav">
+            <div class="nav__item" title="Home Page">
+                <i class="icon ri-home-smile-fill icon"></i> <span class="icon__text">Home</span>
+            </div>
+            <div class="nav__item">
+                <i class="ri-school-fill icon"></i> <span class="icon__text">Students</span>
+            </div>        <div class="nav__item">
+                <i class="ri-contacts-book-3-fill icon"></i> <span class="icon__text">Lessons</span>
+            </div>
+        </div>
+        <!-- End nav -->
+    </header>
+    <main>
+
+    </main>
+
+</body>
+<script>
+    document.querySelectorAll('.nav__item').forEach((item) => {
+        item.addEventListener('click', () => {
+            item.classList.toggle('active')
+            console.log("hi")
+        });
+    });
+</script>
+</html>

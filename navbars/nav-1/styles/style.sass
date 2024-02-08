@@ -1,0 +1,111 @@
+//  بسم الله
+@import 'var'
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap')
+
+* 
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    font-family: 'Sora', sans-serif
+
+ul
+    list-style: none
+a
+    text-decoration: none
+body
+    background: $body-clr
+    display: flex
+    justify-content: flex-start
+
+    main
+        max-height: 100vb
+        overflow: hidden
+        padding: 30px 20px
+
+
+.logo
+    display: flex
+    justify-content: center
+    align-items: center 
+    height: 60px
+    width:  60p 
+    background: $primary-clr
+    color: #fff
+    border-radius: 6px
+    font-size: 1.2rem
+    font-weight: 700
+    padding: .8em
+
+.logoBx
+    display: flex
+    flex-direction: columns
+    align-items: center
+    gap: 20px
+
+    .logo-text span
+        color: $text-clr
+        font-weight: 600
+        font-size: 1rem
+    .logo-text:last-child
+        font-size: .3rem
+        font-weight: 500
+        text-align: center
+
+.slidbar:hover
+    width: 28ch
+.slidbar:hover .text 
+    opacity: 1
+.slidbar:hover .arrow
+    transform: rotate(180deg)
+
+.slidbar .text 
+    white-space: nowrap
+    opacity: 0
+
+.slidbar
+    transition: .4s
+
+    width: 100px
+
+    padding: 20px 20px
+    height: 100vh
+    background: $slidebar-clr
+
+    header
+        position: relative
+        i
+            z-index: 2
+            position: absolute
+            top: 50%
+            right: -33px
+            transform: translateY(-50%)
+            background: $primary-clr
+            border-radius: 50%
+            color: white
+            font-weight: 700
+            font-size: 1.1rem
+            width: 25px
+            height: 25px
+            display: flex
+            justify-content: center
+            align-items: center
+
+    nav
+        margin-top: 25px
+
+        .search
+            background: red
+            height: 20px
+            width: 20px
+            
+        .list
+            background: blue
+            li 
+                // display: flex
+                // justify-content: space-between
+                margin-top: 20px 
+                height: 50px 
+                
+
+
+
