@@ -18,27 +18,38 @@ header {
   display: flex;
   justify-content: center; }
   header .nav {
+    position: relative;
     display: flex;
     gap: 25px;
     font-size: 1.1rem;
     padding: 1.3em 1.5em;
+    box-shadow: 0 0 20px 2px #695cfe;
     color: #fff;
     background-color: #695cfe;
     border-radius: 0 0 20px 20px; }
-    header .nav .nav__item:hover, header .nav .nav__item:focus {
-      background: #928ae8; }
+    header .nav .background {
+      position: absolute;
+      width: 8em;
+      height: 2.5em;
+      background: white;
+      opacity: 0.5;
+      border-radius: 12px;
+      transition: all 0.5s ease; }
+    header .nav .nav__item:hover {
+      background: #b1abef; }
     header .nav .nav__item {
       display: flex;
       justify-content: center;
       align-items: center;
       border-radius: 12px;
       padding: 0.5em 1em;
-      width: 8em;
-      height: 2.5em;
+      width: 9em;
+      height: 3.1em;
       transition: all 0.5s ease; }
       header .nav .nav__item i {
-        font-size: 1.7rem; }
+        font-size: 2rem; }
       header .nav .nav__item .icon__text {
+        cursor: pointer;
         margin-left: 9px;
         font-weight: 500; }
 

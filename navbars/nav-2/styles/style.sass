@@ -23,16 +23,26 @@ header
     justify-content: center
     // align-items: center 
     .nav
+        position: relative
         display: flex
         gap: 25px
         // align-items: center 
         font-size: 1.1rem
         padding: 1.3em 1.5em 
 
+        box-shadow: 0 0 20px 2px $primary-clr
         color: #fff
         background-color: $primary-clr
         border-radius: 0 0 20px 20px
-        .nav__item:hover , .nav__item:focus
+        .background
+            position: absolute
+            width: 8em
+            height: 2.5em
+            background: white
+            opacity: .5
+            border-radius: 12px
+            transition: all .5s ease
+        .nav__item:hover
             background: $primary-clr-light
 
         .nav__item
@@ -42,12 +52,13 @@ header
 
             border-radius: 12px
             padding: .5em 1em
-            width: 8em
-            height: 2.5em
+            width: 9em
+            height: 3.1em
             transition: all .5s ease
             i
-                font-size: 1.7rem
+                font-size: 2rem
             .icon__text
+                cursor: pointer
                 margin-left: 9px
                 font-weight: 500
 
