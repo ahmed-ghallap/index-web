@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Sora", sans-serif; }
+
+.menuBtn {
+  display: none !important; }
+
+.logo {
+  color: #000 !important; }
+
+.icon:hover {
+  background: none !important; }
+
+body {
+  min-height: 100vb;
+  background: url("../media/clinc.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  body nav {
+    width: 100%;
+    background: white;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.2); }
+    body nav .horsital-nav, body nav .sidebar {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center; }
+      body nav .horsital-nav .icon img, body nav .sidebar .icon img {
+        width: 30px; }
+      body nav .horsital-nav li:hover, body nav .sidebar li:hover {
+        background: #eee; }
+      body nav .horsital-nav li, body nav .sidebar li {
+        height: 100%;
+        padding: 20px;
+        display: inline-block; }
+        body nav .horsital-nav li a, body nav .sidebar li a {
+          height: 100%; }
+    body nav li:first-child:hover {
+      background: white; }
+    body nav li:first-child {
+      font-size: 1.4rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin-right: auto; }
+    body nav .sidebar {
+      position: fixed;
+      right: 0;
+      top: 0;
+      z-index: 999;
+      background: #e5e5e559;
+      box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(10px);
+      display: none;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      height: 100vb;
+      width: 350px; }
+      body nav .sidebar li:first-child {
+        margin-bottom: -10px; }
+      body nav .sidebar li {
+        width: 100%;
+        height: auto; }
+
+@media screen and (min-width: 1440px) {
+  html {
+    font-size: 20px; }
+
+  nav .horsital-nav {
+    width: 1440px; } }
+@media screen and (max-width: 800px) {
+  .menuBtn {
+    display: block !important; }
+
+  .hideOnMobile {
+    display: none !important; } }
+@media screen and (max-width: 556px) {
+  .sidebar {
+    width: 100% !important; } }
+@media screen and (max-width: 320px) {
+  .logo {
+    font-size: 1rem; } }
+
+/*# sourceMappingURL=style.css.map */

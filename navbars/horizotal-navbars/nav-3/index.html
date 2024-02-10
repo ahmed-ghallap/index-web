@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello!</title>
+    <link rel="stylesheet" href="styles/framework.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <nav>
+        <ul class="sidebar ">
+            <li class="icon"><a onclick="hideSidebar()" href="#"><img  src="../../../libs/icons/close.svg" alt="" srcset=""></a></li>
+            <!-- <li><a href="#">Ahmed El-Sherarie</a></li> -->
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Lessons</a></li>
+        </ul>
+        <ul class="horsital-nav container">
+            <li><a class="logo" href="#">Ahmed El-Sherarie</a></li>
+            <li class="hideOnMobile"><a  href="#">About</a></li>
+            <li class="hideOnMobile"><a  href="#">Projects</a></li>
+            <li class="hideOnMobile"><a  href="#">Courses</a></li>
+            <li class="hideOnMobile"><a  href="#">Lessons</a></li>
+            <li class="icon menuBtn"><a onclick="showSidebar()" href="#"><img  src="../../../libs/icons/menu.svg" alt="" srcset=""></a></li>
+        </ul>
+    </nav>
+
+    <script>
+        function showSidebar() {
+          document.querySelector('.sidebar').style.display = 'flex';
+        }
+        function hideSidebar() {
+          document.querySelector('.sidebar').style.display = 'none';
+        }
+    </script>
+
+</html>
