@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello!</title>
+    <link rel="stylesheet" href="styles/framework.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <label class="logo">بضع وسبعون</label>
+            <span id="menuBtn"><i class="ri-menu-fill"></i></span>
+            <ul id="menu">
+                <li><a class="active" href="#">
+                    الرئيس
+                </a></li>
+                <li><a href="#">
+                    الدورات
+                </a></li>
+                <li><a href="#">
+                    صفحتي
+                </a></li>
+                <li><a class="loginBtn" href="#">
+                    تسجيل الدخول
+                </a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="container">
+        <!-- <img src="media/clinc.jpg" alt=""> -->
+        
+    </section>
+</body>
+
+    <script>
+        document.querySelector('#menuBtn').addEventListener('click', () => {
+            const menu = document.querySelector('#menu');
+            console.log(menu.style.left )
+             if (menu.style.left === '0px') {
+                menu.style.left = '-100%';
+                console.log("loe")
+             } else {
+                menu.style.left = '0';
+                console.log("he")
+             }
+        });
+        function hideSidebar() {
+        }
+    </script>
+
+</html>
