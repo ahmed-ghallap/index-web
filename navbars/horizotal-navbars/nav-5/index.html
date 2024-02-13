@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello!</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/framework.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+</head>
+<body>
+    <header >
+        <nav class="container main__nav">
+            <a href="#" class="logo">Ahmed <span class="E-letter">E</span>lsherari </a>
+            <div class="nav">
+                <a class="active" href="#">Home</a>
+                <a href="#">Cources</a>
+                <a href="#">About</a>
+                <a class="loginBtn" href="#">login</a>
+            </div>
+            <span class="menuBtn icon"><i class="ri-menu-line"></i></span>
+        </nav>
+        <nav class="sidebar">
+            <div class="nav">
+                <span class="closeBtn icon"><i class="ri-close-fill"></i></span>
+                <a  href="#">Home</a>
+                <a href="#">Cources</a>
+                <a href="#">About</a>
+                <a class="speical mt-auto" href="#">login</a>
+                <a class="speical " href="#">sign up</a>
+            </div>
+        </nav>
+    </header>
+    
+    <script>
+        document.querySelector(".menuBtn").addEventListener('click', () => {
+            document.querySelector(".sidebar").style.display = 'block';
+            console.log("It works")
+        });
+
+        document.querySelector(".closeBtn").addEventListener('click', () => {
+            document.querySelector(".sidebar").style.display = 'none';
+            console.log("It works")
+        });
+    </script>
+
+</body>
+</html>

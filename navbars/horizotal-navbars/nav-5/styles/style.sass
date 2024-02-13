@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap')
+
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    font-family: 'Sora', sans-serif
+
+.logo
+    color: #ffffffc6
+    font-size: 2.3rem
+    font-weight: 800
+.logo::first-letter, .E-letter
+    color: #0090ffc9
+
+.icon
+    transition: .3s
+.icon:hover
+    color: var(--primary-clr) !important
+.active
+    border: 2px solid var(--primary-clr) !important
+    border-radius: 4px
+    padding: 4px 10px
+    box-shadow: inset 0 0 30px 2px #0082e66e
+
+
+body
+    min-height: 100vb
+    background-image: url('../media/hospital.jpg') 
+    background-repeat: no-repeat
+    background-size: cover
+    background-origin: center
+    background-color: lightblue
+
+header
+    position: fixed
+    z-index: 100
+    will-change: transform
+    width: 100%
+    background: transparent
+    .main__nav
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+        padding: .5rem 1.4rem
+        .menuBtn
+            color: white
+            font-size: 2.3rem
+            display: none
+        .nav
+            a
+                position: relative
+                margin-left: 30px
+                color: white
+                font-size: 1rem
+                font-weight: 500
+            a:not(.loginBtn, .active)::before
+                content: ''
+                position: absolute
+                bottom: -4px
+                left: 0
+                width: 0%
+                height: 4px
+                background: #eee
+                transition: .5s
+            a:hover::before
+                width: 100%
+header
+    .sidebar
+        position: absolute
+        top: 0
+        right: 0
+
+        height: 100vb
+        width: 300px
+
+        background: rgba(0, 0, 0, .5)
+        backdrop-filter: blur(.7)
+        -webkit-backdrop-filter: blur(.7)
+        display: none
+        .nav
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            padding: 30px
+            height: 100vb
+
+            .closeBtn
+                color: white
+                font-size: 3rem
+                margin-bottom: 25px
+            a
+                color: white
+                font-size: 1.2rem
+                font-weight: 500
+                margin-top: 30px
+                width: 100%
+                height: 3rem
+                line-height: 3rem
+                padding-left: 20px
+                border-radius: 3px
+                
+            a:hover
+                box-shadow: 0 0 30px 2px #0082e66e
+                outline: 1px solid #eee !important
+            .speical
+                color: white
+                font-size: 1.5rem
+                border-radius: 5px
+
+                box-shadow: inset 0 0 30px 2px #0082e66e
+                outline: 1px solid var(--primary-clr)
+                transition: all .3s
+            .speical:hover
+                box-shadow: 0 0 30px 2px #0082e66e
+                outline: 1px solid var(--primary-clr) !important

@@ -1,0 +1,123 @@
+:root {
+    --primary-clr:#0082e6;
+    --primary-clr-light: #dbe3ff;
+    --secondary-clr: #f5f834;
+    --logo-clr: #93177e;
+}
+
+.loginBtn {
+    background-color: #0082e6 !important;
+    padding: .3em .7em;
+    border-radius: 4px;
+}
+.loginBtn:hover,.loginBtn:focus {
+    outline:3px solid #eee
+}
+
+a:hover {
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+.mt-auto {
+    margin-top: auto !important
+}
+
+
+@media screen and (min-width: 1920px) {
+    html {
+        font-size: 23px !important;
+    }
+    .container {
+        max-width: 1440px !important;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    html {
+        font-size: 23px !important;
+    }
+    .container {
+        max-width: 1440px !important;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    html {
+        font-size: 20px !important;
+    }
+    .container {
+        max-width: 1366px !important;
+    }
+}
+@media screen and (max-width: 1280px) {
+    html {
+        font-size: 20px !important;
+    }
+    .container {
+        max-width: 1280px !important;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    html {
+        font-size: 17px !important;
+    }
+    .container {
+        max-width: 930px !important;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    html {
+        font-size: 17px !important;
+    }
+    .container {
+        max-width: 800px !important;
+    }
+
+    .menuBtn {
+        display: block !important;
+    }
+    .main__nav .nav {
+        display: none !important;
+    }
+        
+}
+
+@media screen and (max-width: 676px){
+    .logo  {
+        font-size: 2rem !important;
+    }
+
+    .sidebar {
+        width: 100% !important;
+    }
+}
+
+.btn {
+    cursor: pointer;
+    font-size: 1.3rem;
+    padding: .6em 1.5em;
+    background-color: var(--primary-clr);
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 8px;
+    border: 3px solid white;
+    transition: all .5s;
+
+}
+
+.btn:hover {
+    background-color: var(--primary-clr-light);
+    transform: translateY(15px);
+}
