@@ -26,7 +26,7 @@
   box-shadow: inset 0 0 30px 2px #0082e66e; }
 
 body {
-  min-height: 100lvb;
+  min-height: 100dvb;
   background-image: url("../media/hospital.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -70,7 +70,7 @@ header .sidebar {
   position: absolute;
   top: 0;
   right: 0;
-  height: 100vb;
+  height: 100dvb;
   width: 300px;
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(0.7);
