@@ -103,6 +103,9 @@ ul {
     .sidebar {
         width: 100% !important;
     }
+    .sidebar .nav {
+        padding-bottom: 100px !important;
+    }
 }
 
 .btn {
