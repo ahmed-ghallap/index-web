@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap')
+
+// Start Reset the page
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    font-family: 'Sora', sans-serif
+
+header
+    .navbar, .dropdown_menu
+        li
+            list-style: none
+        a
+            text-decoration: none
+            color: #fff
+            font-size: 1rem
+        a:focus
+            color: var(--action-clr)
+// End Reset the page
+
+body
+    // background: 
+    height: 100vb
+    background: lightblue url('../../../../libs/images/mount.jpg') no-repeat
+    background-size: cover
+    background-position: center
+
+// Start Navbar
+header
+    padding: 0 2rem
+    .navbar
+        max-width: 1200px //to work well with very large screen
+        width: 100%
+        margin: 0 auto
+        height: 80px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        a, li
+            font-weight: 500
+.navbar
+    .logo
+        a
+            color: #ffffffc0
+            font-size: 1.7rem
+            font-weight: 700
+            transition: color .4s
+            span
+                color: var(--action-clr)
+                opacity: .8
+        a:hover
+            color: var(--action-clr-op)
+.navbar
+    .links__holder
+        display: flex
+        gap: 2rem
+        li
+            a
+                position: relative
+            a::after, a::before
+                content: ''
+                position: absolute
+                margin-inline: auto
+                bottom: -10px
+                width: 0%
+                height: 5px
+                background: var(--action-clr)
+                transition: width .4s
+            a::after
+                right: 50%
+            a::before
+                left: 50%
+            a:hover::after, a:hover::before
+                width: 50%
+// ActionBtn                
+.navbar
+    .actionBtn
+        background: var(--action-clr)
+        padding: .53em 1em
+        border-radius: 50px
+        transition: transform .4s
+        color: #fff !important
+    .actionBtn:hover
+        transform: scale(1.05)
+    .actionBtn:active
+        transform: scale(.95)
+// ToggleBtn
+.navbar
+    .toggleBtn
+        color: #fff
+        font-size: 1.5rem
+        display: none
+    .toggleBtn:hover, .toggleBtn:focus
+        color: var(--action-clr)
+// Dropdown menu
+.navbar
+    position: relative
+    .dropdown_menu.open
+        height: fit-content
+    .dropdown_menu
+        display: none
+        position: absolute
+        top: 80px
+        right: 2rem
+
+        height: 0
+        overflow: hidden
+        transition: .2s
+
+        width: 300px
+
+        border-radius: 10px
+        box-shadow: 0 0 32px 2px rgba(0, 0, 0, .3)
+
+        background: #00000046
+        backdrop-filter: blur(15px)
+        -webkit-backdrop-filter: blure(15px)
+
+        li
+            display: flex
+            justify-content: center
+            align-items: center
+            padding: .7rem
+            margin-bottom: 10px
+            width: 100%
+            a
+                color: var(--action-clr-op)
+            a:hover
+                color: var(--action-clr)
+            .actionBtn
+                display: block !important
+                width: 100%
+
+                text-align: center
+
+// Responseve 
+@media (max-width: 890px)
+    .navbar
+        .toggleBtn
+            display: block
+        .links__holder,  .actionBtn
+            display: none
+        .dropdown_menu
+            display: block
+
+@media (max-width: 650px)
+    .navbar
+        .dropdown_menu
+            left: 0
+            right:  0
+            width: 100%
+            margin-inline: auto
+@media (max-width: 400px)
+    header
+        .logo, .toggleBtn
+            a
+                font-size: 1.5rem !important
+// End Navbar
