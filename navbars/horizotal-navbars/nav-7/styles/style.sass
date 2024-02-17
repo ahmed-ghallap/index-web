@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap')
+
+// Start Reset the page
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    font-family: 'Sora', sans-serif
+
+header
+    .navbar, .dropdown_menu
+        li
+            list-style: none
+        a
+            text-decoration: none
+            color: var(--action-clr-op)
+            font-size: 1rem
+        a:is(:focus, :acitve)
+            color: var(--action-clr)
+// End Reset the page
+
+body
+    height: 100vb
+    background: lightblue url('../../../../libs/images/underwater.jpg') no-repeat
+    background-size: cover
+    background-position: center
+
+// Start Navbar
+header 
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 999
+
+    display: flex
+    align-items: center
+    background: rgba(0, 0, 0, .3)
+
+    width: 100%
+    height: 80px
+    padding: 0 2rem
+
+    .navbar
+        width: 100%
+        max-width: 1200px 
+        margin-inline: auto
+
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+header::before
+    content: ''
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    z-index: -1
+    backdrop-filter: blur(20px)
+    -webkit-backdrop-filter: blure(20px)
+
+
+// logo and toggle icon
+.navbar
+    .logo, #toggleBtn
+        color: #ffffffb0 
+        font-size: 2rem
+        font-weight: 800
+        span
+            color: var(--action-clr)
+    .logo:hover
+        color: white
+    #toggleBtn
+        display: none
+        color: #fff
+ 
+.navbar
+    overflow: hidden
+    .links
+        display: flex
+        align-items: center
+        gap: 20px
+        li 
+            a:hover
+                color: var(--action-clr)
+            a
+                font-size: 1.2rem
+                font-weight: 500
+.navbar::after
+    content: ''
+    position: absolute
+    top: 0
+    left: -100%
+    z-index: -1
+
+    width: 100%
+    height: 100%
+    background: linear-gradient(90deg, transparent 40%, #d9d9d95c, transparent)
+    transition: .5s
+.navbar:hover::after
+    left: 100%
+    width: 0
+
+// Dropdown menu
+header
+    .dropdown_menu
+        display: none
+    .dropdown_menu.open
+        display: block !important
+        position: absolute
+        top: 80px
+        left: 0
+        width: 100%
+        text-align: center
+        backdrop-filter: blur(20px)
+        -webkit-backdrop-filter: blur(20px)
+        box-shadow: 0 0 20px 2px rgba(0, 0, 0, .4)
+        li
+            a
+                display: inline-block
+                padding: .7rem
+// ? Responseve navbar dropdown menu
+@media (max-width: 720px)
+    header
+        .navbar
+            #toggleBtn
+                display: block
+            .links
+                display: none
+        .dropdown_menu
+            display: none
+// End Navbar

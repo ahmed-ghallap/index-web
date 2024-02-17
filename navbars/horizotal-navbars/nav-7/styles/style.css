@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Sora", sans-serif; }
+
+header .navbar li, header .dropdown_menu li {
+  list-style: none; }
+header .navbar a, header .dropdown_menu a {
+  text-decoration: none;
+  color: var(--action-clr-op);
+  font-size: 1rem; }
+header .navbar a:is(:focus, :acitve), header .dropdown_menu a:is(:focus, :acitve) {
+  color: var(--action-clr); }
+
+body {
+  height: 100vb;
+  background: lightblue url("../../../../libs/images/underwater.jpg") no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 80px;
+  padding: 0 2rem; }
+  header .navbar {
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+
+header::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blure(20px); }
+
+.navbar .logo, .navbar #toggleBtn {
+  color: #ffffffb0;
+  font-size: 2rem;
+  font-weight: 800; }
+  .navbar .logo span, .navbar #toggleBtn span {
+    color: var(--action-clr); }
+.navbar .logo:hover {
+  color: white; }
+.navbar #toggleBtn {
+  display: none;
+  color: #fff; }
+
+.navbar {
+  overflow: hidden; }
+  .navbar .links {
+    display: flex;
+    align-items: center;
+    gap: 20px; }
+    .navbar .links li a:hover {
+      color: var(--action-clr); }
+    .navbar .links li a {
+      font-size: 1.2rem;
+      font-weight: 500; }
+
+.navbar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent 40%, #d9d9d95c, transparent);
+  transition: 0.5s; }
+
+.navbar:hover::after {
+  left: 100%;
+  width: 0; }
+
+header .dropdown_menu {
+  display: none; }
+header .dropdown_menu.open {
+  display: block !important;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.4); }
+  header .dropdown_menu.open li a {
+    display: inline-block;
+    padding: 0.7rem; }
+
+@media (max-width: 720px) {
+  header .navbar #toggleBtn {
+    display: block; }
+  header .navbar .links {
+    display: none; }
+  header .dropdown_menu {
+    display: none; } }
+
+/*# sourceMappingURL=style.css.map */
