@@ -18,7 +18,7 @@ body .sidebar {
   width: 300px;
   width: 88px;
   height: 100%;
-  background: lightblue;
+  background: white;
   transition: 0.5s; }
 
 .sidebar .logoBx {
@@ -72,14 +72,15 @@ body .sidebar {
     top: 0;
     left: 0;
     content: attr(data-hover);
-    color: white;
+    color: green;
     width: 0px;
     overflow: hidden;
     transition: 0.6s; }
   .sidebar .nav_links .title {
     position: relative;
     color: var(--text-icon-clr);
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: 500;
     margin-left: 35px;
     transition: 0.7s; }
   .sidebar .nav_links .title:hover {
@@ -92,7 +93,8 @@ body .sidebar {
 
 .sidebar .user_info {
   width: 100%;
-  height: 100px; }
+  height: 100px;
+  box-shadow: 0 0 20px 2px rgba(73, 71, 16, 0.3); }
   .sidebar .user_info .text {
     height: 100%;
     width: 100%;

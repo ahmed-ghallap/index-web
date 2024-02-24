@@ -7,10 +7,10 @@
     --action-clr-op: #fff;
 
     --text-clr:rgb(41, 41, 18);
-    --icon-clr:  #dbe3ff;
-    --text-icon-clr-hover: #f5f834;
+    --icon-clr: rgb(73 191 84 / 67%);
+    --text-icon-clr-hover: #fbff04;
     --text-icon-clr: black;
-    --logo-first-letter-clr: #f5f834;
+    --logo-first-letter-clr: rgba(52, 144, 61, 0.714);
     --logo-clr: black;
 }
 
