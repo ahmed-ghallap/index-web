@@ -1,29 +1,119 @@
-//  بسم الله
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap')
+// font familys: 'Poppins' 'Anta' 'Sora'
 
 * 
-    padding: 0
-    margin: 0
     box-sizing: border-box
-
+    margin: 0
+    padding: 0
+    
 body
-    background: lightblue url('../../../libs/images/underwater.jpg') no-repeat
-    background-size: cover
-    background-position: center 
-
+    font-family: 'Sora'
     height: 100vh
-    width: 100vw
-body 
-    .wrapper
-        height: 100vh
-        width: 100vw
-        backdrop-filter: blur(5px)
-.wrapper
-    display: flex
-    justify-content: center
-    align-items: center
-    .post_card
-        max-width: 600px
-        width: 80vw
-        min-height: 450px
-        background: lightblue
-        outline: 2px solid rgb(0, 0, 0)
+    background: lightblue url('../../../libs/images/mount.jpg') no-repeat 
+    // background: linear-gradient(135deg, var(--primary-clr) ,var(--secondary-clr))
+    background-size: cover
+    display: grid
+    place-items: center
+    backdrop-filter: blur(10px)
+    -webkit-backdrop-filter: blur(15px)
+    padding: 10px
+
+.container
+    max-width: 700px
+    width: 100%
+    background: var(--white-clr)
+    border-radius: 12px
+    padding: 25px 30px
+    .title
+        position: relative
+        font-size: 1.7rem
+        font-size: 500
+    .title:before
+        content: ''
+        position: absolute
+        left: 0
+        bottom: 0
+        width: 30px
+        height: 3px
+        background: linear-gradient(135deg, var(--primary-clr) ,var(--secondary-clr))
+
+.container form
+    .user-details
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        margin: 20px 0 12px
+        .inputBx
+            width: calc(100% / 2 - 20px)
+            margin-bottom: 20px
+            label
+                display: inline-block
+                font-weight: 500
+                margin-bottom: 5px
+            input
+                height: 45px
+                width: 100%
+                outline: none
+                border: 1px solid #ccc
+                border-radius: 5px
+                border-bottom-width: 2px
+                font-size: 1rem
+                padding-left: .9em  
+                transition: .3s
+            input:is(:focus, :valid)
+                border-color: var(--primary-clr)
+    .gender
+        .gender-title
+            font-size: 20px
+            font-weight: 500
+        .category
+            display: flex
+            justify-content: space-between
+            width: 80%  
+            margin: 14px 0
+            label
+                display: flex
+                align-items: center
+                .dot
+                    height: 18px
+                    width: 18px
+                    margin-right: 10px
+                    background: var(--gray-clr)
+                    border-radius: 50% 
+                    border: 5px solid var(--gray-clr)
+        #dot-1:checked ~ .category .one 
+            background: var(--primary-clr)
+        #dot-2:checked ~ .category .two
+            background: var(--secondary-clr)
+    .button
+        height: 45px
+        margin-top: 30px
+        input
+            height: 100%
+            width: 100%
+            background: linear-gradient(135deg, var(--primary-clr) ,var(--secondary-clr))
+            border-radius: 5px 
+            font-size: 1.1rem
+            font-weight: 500
+            letter-spacing: 1px
+            color: var(--white-clr)
+            transition: all .5s
+        input:is(:hover, :active)
+            // background: linear-gradient(135deg, var(--secondary-clr) ,var(--primary-clr))
+            background: linear-gradient(-135deg, var(--primary-clr) ,var(--secondary-clr))
+            transition: all .5s
+
+@media (max-width: 584px)
+    .container
+        width: 100%
+        form 
+            .user-details::-webkit-scrollbar
+                width: 0
+            .user-details
+                max-height: 300px
+                overflow-y: scroll
+                .inputBx
+                    width: 100%
+            .gender
+                .category
+                    width: 100%

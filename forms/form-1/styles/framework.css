@@ -1,0 +1,17 @@
+/* ==== ==== ==== Start CSS Varibles ==== ==== ==== */
+
+:root {
+    --white-clr: #fff;
+    --primary-clr: #71b7e6;
+    --secondary-clr: #9b59b6;
+    --gray-clr: #d9d9d9;
+}
+
+/* ==== ==== ==== End CSS Varibles ==== ==== ==== */
+
+.btn {
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
