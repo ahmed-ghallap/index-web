@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap')
+// font familys: 'Poppins' 'Anta' 'Sora'
+
+* 
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    
+body
+    background: var(--primary-clr)
+    min-height: 100vb
+    width: 100%
+    display: grid
+    place-items: center
+
+.contact-us
+    width: 80%
+    background: var(--white-clr)
+    // background: linear-gradient(45deg, var(--dark-action-clr), var(--secondary-clr))
+    border-radius: 6px
+    padding: 20px 60px 40px 40px
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, .3)
+    font-family: 'Poppins'
+    .content
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .left-side
+            position: relative
+            width: 30%
+            height: 100%
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+        .left-side::before
+            content: ''
+            position: absolute
+            height: 70%
+            width: 2px
+            background: var(--secondary-clr)
+            top: 50%
+            right: 0
+            transform: translateY(-50%)
+        .right-side
+            width: 70%
+            margin-left: 14px
+            padding-left: 12px
+
+.contact-us .content
+    .left-side
+        .details
+            text-align: center
+            margin: 14px
+            i
+                font-size: 1.95rem
+                color: var(--dark-action-clr)
+                margin-bottom: .25em
+            h3
+                font-size: 1.15rem
+                font-weight: 600
+                margin-bottom: 7px
+            p
+                font-size: .9rem
+                color: var(--gray-clr)
+                position: relative
+
+    .right-side
+        h3
+            font-size: 1.7rem
+            font-weight: 700
+            // color: var(--secondary-clr)
+            margin-bottom: 10px
+        form
+            .inputBx
+                height: 50px
+                width: 100%
+                margin: 12px 0
+                input, textarea
+                    height: 100%
+                    width: 100%
+                    padding-inline: 15px
+                    background: #f0f0f8
+                    border: none
+                    outline-color: var(--action-clr)
+                    border-radius: 6px
+                    font-size: 1rem
+            textarea
+                padding-top: 10px
+                resize: none
+            .messageBx
+                min-height: 110px !important
+            .button
+                display: flex
+                justify-content: flex-end
+            .button input[type="submit"]
+                color: var(--secondary-clr)
+                font-weight: 600
+                padding: .5rem 1rem
+                margin: 12px
+                width: 200px
+                outline: 3px solid var(--action-clr)
+                border-radius: 6px
+                transition: .3s
+                scale: 1
+            // .button input[type="submit"]:hover
+            //     color: var(--white-clr)
+            //     background: var(--secondary-clr)
+            .button input[type="submit"]:active
+                scale: .9
+@media (max-width: 950px)
+    .contact-us
+        width: 90%
+        padding: 30px 35px 40px
+
+@media (max-width: 764px)
+    .contact-us
+        // height: 100%
+        margin: 40px 0
+        .content
+            display: flex
+            flex-direction: column-reverse
+            .left-side::before
+                display: none
+            .left-side
+                width: 100%
+                margin-top: 40px
+                flex-direction: row  
+                flex-wrap: wrap
+                justify-content: center
+            .right-side
+                width: 100%
+                margin-left: 0
+                form .button
+                    justify-content: center
