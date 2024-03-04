@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap')
+// font familys: 'Poppins' 'Anta' 'Sora'
+
+* 
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    font-family: "Sora" sans-serif
+body
+    min-height: 100vh
+    background: lightblue linear-gradient(45deg, lightblue, var(--primary-clr))
+    background-size: cover
+    background-position: center
+    
+// ========= Start Navbar =========
+.navbar
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 999
+    width: 100%
+    box-shadow: 0 0 20px 4px rgba(0, 0, 0, .3)
+    background: lightblue linear-gradient(45deg, lightblue, var(--primary-clr))
+    nav
+        margin-inline: auto
+        width: 100vw
+        max-width: 1200px
+nav
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: .5rem 1rem
+    .icon
+        display: none
+        font-size: 2rem
+        color: white
+    .logo
+        // margin-right: auto
+        font-size: 2rem
+        font-weight: 700
+    .links
+        font-size: 1.5rem
+        font-weight: 500
+        list-style: none
+        display: flex
+        gap: 20px
+        a
+            color: green
+            text-decoration: none
+    .btn
+        font-size: 1.5rem
+        font-weight: 500
+        color: var(--white-clr)
+        padding: .5em 1em
+        border: 2px solid var(--gray-clr)
+
+// ========= End Navbar =========
+
+// ========= Start Hero Section =========
+.hero
+    position: relative
+    border: 1px solid black
+    margin-top: 12rem
+    padding-inline: 4rem
+    text-align: center
+    width: 90ch
+    margin-inline: auto
+    h1
+        font-size: 3.8rem
+        letter-spacing: -1px
+        color: var(--clr-primary)
+        .job
+            color: var(--white-clr)
+    p
+        color: black
+        font-weight: 500
+        font-size: 1.1rem
+        strong
+            color: var(--white-clr)
+    .upper-text
+        margin-bottom: -25px
+    .lower-text
+        margin-top: -20px
+    .imgBx
+        // display: none
+        position: absolute
+        top: 0
+        right: 0
+        z-index: -1
+        height: 300px
+        width: 300px
+        border-radius: 50%
+        border: 5px solid white
+        background: darkgreen url(../../../libs/images/me.jpg)
+        opacity: .1
+        background-size: cover
+        transition: .5s
+    .imgBx:hover
+        opacity: 1
+
+// ========= End Hero Section =========

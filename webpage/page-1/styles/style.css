@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Anta&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Sora" sans-serif; }
+
+body {
+  min-height: 100vh;
+  background: lightblue linear-gradient(45deg, lightblue, var(--primary-clr));
+  background-size: cover;
+  background-position: center; }
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.3);
+  background: lightblue linear-gradient(45deg, lightblue, var(--primary-clr)); }
+  .navbar nav {
+    margin-inline: auto;
+    width: 100vw;
+    max-width: 1200px; }
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem; }
+  nav .icon {
+    display: none;
+    font-size: 2rem;
+    color: white; }
+  nav .logo {
+    font-size: 2rem;
+    font-weight: 700; }
+  nav .links {
+    font-size: 1.5rem;
+    font-weight: 500;
+    list-style: none;
+    display: flex;
+    gap: 20px; }
+    nav .links a {
+      color: green;
+      text-decoration: none; }
+  nav .btn {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--white-clr);
+    padding: 0.5em 1em;
+    border: 2px solid var(--gray-clr); }
+
+.hero {
+  position: relative;
+  border: 1px solid black;
+  margin-top: 12rem;
+  padding-inline: 4rem;
+  text-align: center;
+  width: 90ch;
+  margin-inline: auto; }
+  .hero h1 {
+    font-size: 3.8rem;
+    letter-spacing: -1px;
+    color: var(--clr-primary); }
+    .hero h1 .job {
+      color: var(--white-clr); }
+  .hero p {
+    color: black;
+    font-weight: 500;
+    font-size: 1.1rem; }
+    .hero p strong {
+      color: var(--white-clr); }
+  .hero .upper-text {
+    margin-bottom: -25px; }
+  .hero .lower-text {
+    margin-top: -20px; }
+  .hero .imgBx {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 5px solid white;
+    background: darkgreen url(../../../libs/images/me.jpg);
+    opacity: 0.1;
+    background-size: cover;
+    transition: 0.5s; }
+  .hero .imgBx:hover {
+    opacity: 1; }
+
+/*# sourceMappingURL=style.css.map */

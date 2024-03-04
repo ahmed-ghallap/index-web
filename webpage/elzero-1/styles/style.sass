@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap')
+// font familys: 'Poppins' 'Anta' 'Sora'
+
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+body 
+    background: var(--primary-clr)
+    font-family: system-ui, sans-sarif
+    min-height: 100vb    
+
+// Start Navbar
+.navbar
+    width: 100%
+    position: absolute
+    top: 0
+    left: 0
+    box-shadow: 0 0 20px 4px rgba(0, 0, 0, .3)
+    nav
+        height: 100%
+        margin-inline: auto
+        max-width: 1400px
+        width: 100vw
+        padding: 1rem 3rem
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .logo, .icon
+            font-size: 2rem
+            font-weight: 700
+        .icon
+            display: none
+        .nav_links
+            display: flex
+            list-style: none
+            li
+                height: 100%
+                a
+                    display: block
+                    height: 100%
+                    text-decoration: none
+                    font-size: 1rem
+                    padding-inline: 1em 
+                    font-weight: 500
+                    color: var(--text-gray)
+                a:hover
+                    border-bottom:  4px solid var(--action-clr)
+                    background: #243556
+// End Navbar
+
+// Start Hero Section
+.hero
+    padding-top: 8 * 16px
+    background: var(--primary-dark-clr)
+    color: var(--white-clr)
+
+    // --primary-dark-clr: ##161f32;
+    
+    
+
+// End Hero Section
