@@ -17,6 +17,9 @@ section {
 .carousel {
   position: relative; }
   .carousel .carousel-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     font-size: 4rem;
     top: 50%;
