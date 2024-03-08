@@ -18,9 +18,9 @@ section
 .carousel
     position: relative
     .carousel-btn
-        display: flex
-        justify-content: center
-        align-items: center
+        // display: flex
+        // justify-content: center
+        // align-items: center
         position: absolute
         font-size: 4rem
         top: 50%
@@ -31,7 +31,8 @@ section
         outline: none
         background: rgba(0, 0, 0, .1)
         cursor: pointer
-        padding-inline: 1rem
+        // padding-inline: 1rem
+        padding: .5rem 2rem
         border-radius: 3px 
     .carousel-btn:is(:hover, :focus)
         background: rgba(0, 0, 0, .3)
@@ -59,4 +60,7 @@ section
         object-position: center
 
 // ====== End Carousel ====== 
+@media (max-width: 700px)
+    html
+        font-size: 12px
             
