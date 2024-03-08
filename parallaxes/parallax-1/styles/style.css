@@ -48,8 +48,14 @@ section {
     object-fit: cover;
     z-index: -2; }
   .wrapper header img.front {
-    transform: translateZ(-10px) scale(2); }
+    transform: translateZ(-10px) scale(2);
+    z-index: -3; }
   .wrapper header img.back {
-    transform: translateZ(-5px) scale(1.5); }
+    transform: translateZ(-5px) scale(1.5);
+    z-index: -4; }
+
+@media only screen and (max-width: 900px) {
+  .title {
+    font-size: 3rem !important; } }
 
 /*# sourceMappingURL=style.css.map */

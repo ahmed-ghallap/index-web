@@ -50,12 +50,11 @@ section
         z-index: -2
     img.front
         transform: translateZ(-10px) scale(2)
+        z-index: -3
     img.back
         transform: translateZ(-5px) scale(1.5)
+        z-index: -4
 
-    // .title
-        // position: absolute
-        // top: 30%
-        // left: 50%
-        // transform: translate(-50%, -50%)
-
+@media only screen and (max-width: 900px)
+    .title
+        font-size: 3rem !important
