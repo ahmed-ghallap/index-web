@@ -1,0 +1,428 @@
+// @import url('https://fonts.googleapis.com/css2?family=Anta&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat+Alternates:wght@700&display=swap')
+// font familys: 'Comfortaa' 'Montserrat Alternates' 'Poppins' 'Anta' 'Sora'
+
+* 
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    font-family: Comfortaa ,sans-serif
+html
+    font-family: Comfortaa ,sans-serif
+    scrollbar-color: var(--secondary-light-clr) #f1f1f1
+    overflow-x: hidden
+
+// ==================  Framwork
+// #####Scorllbar
+
+// html::-webkit-scrollbar
+//     width: 2px
+// /* تخصيص مقبض شريط التمرير لمتصفحات WebKit 
+// html::-webkit-scrollbar-thumb 
+//     background: var(--primary-clr) 
+//     border-radius: 6px
+// /* تخصيص خلفية شريط التمرير لمتصفحات WebKit */
+// html::-webkit-scrollbar-track 
+//     background: #f1f1f1
+// #####Container
+.container
+    margin-inline: auto
+    width: 80%
+    max-width: 1200px
+    padding-bottom: 50px
+
+// #####Heading and SubHeading
+.heading
+    font-size: 2rem
+    font-weight: bold
+    text-transform: capitalize
+.subheading
+    font-size: .9rem
+    font-weight: lighter
+    margin-bottom: 100px
+
+// #####Buttons
+.btnSolid:hover
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2)
+.btnSolid, .btnOutline
+    text-decoration: none
+    outline: none
+    border: none
+    display: inline-block
+    padding: .7em 1.2em
+    transition: 300ms
+    background: linear-gradient(to right, var(--primary-clr), var(--secondary-light-clr))
+    color: var(--text-darker-clr)
+    font-weight: 900
+    border-radius: 12px
+.btnOutline:hover
+    background: linear-gradient(to right, var(--primary-clr), var(--secondary-light-clr))
+
+.btnOutline
+    transition: 300ms
+    border: 2px solid var(--secondary-light-clr)
+    background: transparent
+
+// #####link
+a.link
+    position: relative
+    color: var(--primary-light-clr)
+    text-decoration: none
+
+a.link:active 
+    color: var(--primary-light-clr)
+a.link:hover
+    // color: var(--action-clr)
+    text-decoration: underline
+    text-decoration-thickness: 2px
+    text-underline-offset: 4px
+
+a.link:before
+    content: ''
+    display: block
+    position: absolute
+    width: .6rem
+    height: .6rem
+
+    background: var(--secondary-light-clr)
+    border-radius: 50px
+    // box-shadow: 0 0 10px 1px var(--action-clr)
+
+    top: -5px
+    right: -18px
+// #####End Link
+
+// ==================  Navbar
+.Navbar
+    box-shadow: 0 4px  5px 0px rgba(0, 0, 0, .1)
+    font-size: 1.1rem
+    nav
+        width: 90%
+        max-width: 1400px
+        margin: auto
+        height: max-content
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+
+        .logoBx
+            display: flex
+            align-items: center
+            height: 80px
+            gap: 13px
+            img
+                display: inline-block
+            .face
+                box-sizing: content-box
+                width: auto
+                height: 80%
+                border: solid 4px white
+                border-radius: 44px
+                box-shadow: 0 0 15px 2px var(--primary-clr) , 0 0 40px 5px var(--primary-clr) inset
+                // box-shadow: 0 0 12px 1px hsla(0, 0, 0, .4) 
+            .text
+                width: auto
+                height: 20px
+        .linksBx, li, a 
+            height: 100%
+        .linksBx
+            list-style: none
+            display: flex
+            gap: 2rem
+            align-items: center
+            a:hover, a:visited
+                color: inherited
+            a:active, a:focus
+                color: var(--text-darker-clr)
+            a
+                display: inline-block
+                position: relative
+                width: max-content
+                color: var(--text-dark-clr )
+                text-decoration: none
+            a:hover::after
+                width: 100%
+            a::after
+                transition: 300ms
+                content: ''
+                position: absolute
+                background: var(--secondary-light-clr)
+                width: 0
+                height: 5px
+                bottom: -8px
+                left: 50%
+                transform: translateX(-50%)
+                transform-origin: center
+            .btnSolid::after
+                display: none
+
+// ==================  Hero Section
+.HeroCover
+    // background: linear-gradient(var(--primary-clr) ,var(--primary-light-clr))
+    // background: radial-gradient(circle at 10px 20px, var(--secondary-clr) 20%, var(--primary-light-clr) 10%, white)
+    // background: radial-gradient(circle at 10px 20px, var(--secondary-clr) 10%, var(--primary-light-clr) 10%, white)
+.Hero
+    display: flex
+    flex-direction: column
+    gap: 150px
+    align-items: center
+    padding-top: 150px
+    padding-bottom: 50px
+    background: radial-gradient(circle at  250px 420px, var(--secondary-light-clr)  ,transparent 20%)
+    .content
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+        h1
+            width: max-content
+            font-size: 2.8rem
+            line-height: 1.3
+            font-family: "Montserrat Alternates", sans-serif
+            font-weight: 700
+        .imgBx p
+            display: inline-block
+            position: absolute
+            width: fit-content
+
+            font-size: 13px
+            padding: .5em 1.4em
+            background-color: var(--primary-light-clr)
+            border-radius: 12px
+
+            top: -10px
+            left: -40px
+            z-index: 20
+
+            transform: rotate(-16deg)
+        .imgBx
+            position: relative
+            width: 43%
+            border-radius: 44px
+            // box-shadow: 0 4px  15px 1px rgba(0, 0, 0, .1)
+            // box-shadow: 0 4px  15px 1px rgba(0, 0, 0, .1)
+            img:hover
+                border-radius: 22px
+            img
+                transition: 300ms
+                border-radius: 44px
+                width: 100%
+                height: 100%
+                object-fit: fill
+    .btnBx
+        display: flex
+        flex-direction: column
+        align-items: center
+        gap: 20px
+
+        .available
+            display: flex
+            justify-content: space-between
+            align-items: center
+            gap: 20px
+            
+            position: relative
+            border-radius: 30px
+            padding: 1.1em 2em
+            border: 1px solid white
+            box-shadow: 0 0px  15px 1px rgba(0, 0, 0, .1)
+            
+            .bullet
+                width: 15px 
+                height: 15px
+                border-radius: 20px
+                background-color: #3FBA21
+                box-shadow: 0 0px  20px 2px #3FBA21
+                display: inline-block
+
+        .btnSolid
+            width: 130%
+            padding: 1.1em 2em
+            text-align: center
+            font-weight: 800
+
+// ==================  About Me Section
+
+.AboutCover
+    background: radial-gradient(circle at bottom  left , var(--primary-clr)  , var(--primary-light-clr) 15%, white 30%)
+.About
+    .subheading
+        margin-bottom: 0
+    main
+        display: flex
+        gap: 70px
+        .contentBx
+            display: flex
+            flex-direction: column
+            justify-content:  center
+            gap: 1rem 
+            p 
+                line-height: 1.4
+                #myname
+                    color: var(--secondary-clr)
+                    font-weight: bold
+        .imgBx
+            position: relative
+            width: 500px
+            height: 400px
+            img:hover
+                border-radius: 10px
+            img
+                display: inline-block
+                position: absolute
+                height: auto
+                width: auto
+                border-radius: 25px
+                transition: 300ms
+            img.c
+                height:  300px
+                width: auto
+                left: 10px
+                top: 50%
+                transform: translateY(-50%)
+                z-index: 2
+            img.b
+                height: 150px
+                z-index: 3
+                bottom: 0
+                left: -28%
+                background: linear-gradient(to right, var(--primary-clr), var(--secondary-light-clr))
+            img.a
+                height: 100px
+                z-index: 1 
+                top: 13%
+                transform: translateY(-50%)
+                left: -30%
+//==================  Projects  Section
+.ProjectsCover
+    background: radial-gradient(circle at top  left , var(--primary-clr)  , var(--primary-light-clr) 15%, white 30%, )
+.Projects
+    min-height: 70vh
+    .card-wrapper
+        .card-1
+            background: lightblue
+            height: 100%
+            width: 100%
+//==================  Stack  Section
+//==================  Technolody  Section
+.TechnologyCover
+    background: radial-gradient(circle at top right , var(--primary-clr)  , var(--primary-light-clr) , white 50%)
+.StackCover
+    background: radial-gradient(circle at bottom right , var(--primary-clr)  , var(--primary-light-clr) , white 50%)
+.Stack, .Technology
+    padding-bottom: 100px
+    .cards
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        gap: 20px
+        cursor: url("../media/icons/color-cursor.png") 16 16, auto
+        .card:hover
+            transform: scale(1.1)
+        .card
+            transition: 300ms
+            flex: 1 1 33.33%
+            max-width: 250px
+            min-width: 200px
+            height: 100px
+            box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3)
+            border-radius: 12px
+            background: linear-gradient(var(--primary-clr), white)
+            display: flex
+            justify-content: space-between
+            align-items: center
+            padding-inline: 1rem
+            .django
+                border-radius: 50%
+            img
+                height: 70%
+                width: auto
+            .text .title
+                text-transform: capitalize
+                font-size: 1.2rem
+                font-weight: bold
+                margin-bottom: 5px
+            .text .subTitle
+                text-transform: capitalize
+                font-size: .8rem
+                font-weight: lighter
+
+// ==================  Contact Section
+.Contact
+    .wrapper
+        display: flex
+        justify-content: space-between
+        // gap: 200px
+        .form
+            width: 50%
+            p
+                font-weight: bold
+                margin-block: 1.4rem
+                margin-top: 3rem
+            input::placeholder, textarea::placeholder
+                font-size: .85rem
+            input:focus, input:hover, textarea:focus, textarea:hover
+                background: var(--primary-light-clr)
+            input, textarea
+                display: block
+                margin-bottom: 1rem
+                height: 40px
+                width: 100%
+                border: none
+                outline: 3px solid var(--primary-clr)
+                padding-inline: 1.2rem
+                border-radius: 33px
+            textarea
+                padding-top: 1rem
+                height: auto
+            .btnOutline
+                width: 200px
+
+        .info
+            display: flex
+            flex-direction: column
+            font-size: 1.1rem
+            div.wrapper
+                display: flex
+                align-items: center
+                gap: 100px
+                height: 50px
+                margin-bottom:  1.2rem
+                .phone-nums
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    b 
+                        color: red
+                .icon
+                    display: inline-block
+                    height: 100%
+                    width: auto
+            .links
+                display: flex
+                flex-direction: column
+                font-size: 1rem
+                gap: 10px
+                margin-top: 20%
+                width: max-content
+                .link
+                    text-transform: capitalize
+                    display: inline-block
+                    width: 100%
+                    color: black
+
+// ==================  Footer Section
+footer
+    width: 100vw
+    height: 80px
+    background: linear-gradient(to right, var(--primary-clr), var(--secondary-light-clr) 70%, white)
+    display: grid
+    place-items: center
+    font-weight: bold
+
+    .link::before
+        background: black
+    .link
+        color: black
+    
