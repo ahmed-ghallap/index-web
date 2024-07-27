@@ -6,10 +6,15 @@
   font-family: Comfortaa, sans-serif; }
 
 html {
-  font-family: Comfortaa, sans-serif;
+  cursor: url("../media/icons/cursor.png") 1 1, auto; }
+
+::selection {
+  background: var(--secondary-light-clr);
+  color: black; }
+
+html {
   scrollbar-color: var(--secondary-light-clr) #f1f1f1;
-  overflow-x: hidden;
-  cursor: url("../media/icons/cursor.png") 16 16, auto; }
+  overflow-x: hidden; }
 
 .container {
   margin-inline: auto;
@@ -63,16 +68,22 @@ a.link:hover {
   text-decoration-thickness: 2px;
   text-underline-offset: 4px; }
 
-a.link:before {
+a.link:before, .num::before {
   content: "";
   display: block;
   position: absolute;
-  width: 0.6rem;
-  height: 0.6rem;
+  width: 0.6em;
+  height: 0.6em;
   background: var(--secondary-light-clr);
   border-radius: 50px;
   top: -5px;
   right: -18px; }
+
+.num::before {
+  background: black !important; }
+
+.num {
+  color: black !important; }
 
 .Navbar {
   box-shadow: 0 4px 5px 0px rgba(0, 0, 0, 0.1);
@@ -350,8 +361,6 @@ a.link:before {
         display: flex;
         flex-direction: column;
         align-items: center; }
-        .Contact .wrapper .info div.wrapper .phone-nums b {
-          color: red; }
       .Contact .wrapper .info div.wrapper .icon {
         display: inline-block;
         height: 100%;
