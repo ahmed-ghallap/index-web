@@ -84,6 +84,9 @@ a.link:before, .num::before {
 
 .num {
   color: black !important; }
+  .num b {
+    display: inline-block;
+    width: 16ch; }
 
 .Navbar {
   box-shadow: 0 4px 5px 0px rgba(0, 0, 0, 0.1);
