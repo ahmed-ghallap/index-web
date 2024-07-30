@@ -1,4 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat+Alternates:wght@700&display=swap");
+@media (max-width: 414px) {
+  body .container {
+    width: 90%;
+    padding-bottom: 30px; }
+  body nav .linksBx {
+    display: none; }
+  body .Hero {
+    padding-top: 10px;
+    background: none;
+    gap: 45px; }
+    body .Hero .content {
+      flex-direction: column;
+      gap: 20px; }
+      body .Hero .content h1 {
+        width: 100%;
+        font-size: 2rem;
+        line-height: 1.4;
+        text-justify: justify; }
+      body .Hero .content .imgBx {
+        width: 100%; }
+        body .Hero .content .imgBx p {
+          left: 0; }
+    body .Hero .btnBx .btnSolid {
+      max-width: 100%; } }
 * {
   box-sizing: border-box;
   margin: 0;
