@@ -1,33 +1,135 @@
 // ================ P
 
-@media (max-width: 414px) 
-    body
-        .container
-            width: 90%
-            padding-bottom: 30px
-        
-        // font-size: 14px
-        nav .linksBx
+@media (max-width: 1180px) 
+    .Hero .content 
+        h1
+            font-size: 2.2rem
+
+@media (max-width: 920px) 
+    .container
+        width: 90%
+    .Hero .content 
+        h1
+            font-size: 2rem
+    .About 
+        .subheading
+            margin-bottom: 50px
+        .imgBx
             display: none
 
+@media (max-width: 733px) 
+    body
+        font-size: 14px
+    .Hero .content 
+        h1
+            font-size: 1.7rem
+    .Contact .section-wrapper
+        flex-direction: column 
+        width: 100%
+        align-items: center
+        gap: 50px
+        .form
+            width: 100%
+            text-align: center
+            input
+                height: 55px
+        .info
+            width: max-content
+            .wrapper
+                justify-content: space-between
+                // gap: 400px
+                
+            .links
+                width: 100%
+                flex-direction: row
+                justify-content: space-between
+                margin-top: 20px
+                .link
+                    width: max-content
 
-        .Hero 
-            padding-top: 10px
-            background: none
-            // border: 1px solid
+@media (max-width: 630px) 
+    body
+        font-size: 13px
+    .Hero 
+        padding-top: 50px
+        gap: 50px
+        .content 
+            flex-direction: column
+            gap: 30px
+            h1
+                width: 100%
+                text-align: center
+                line-height: 1.35
+                font-size: 1.8rem
+            h1 br:nth-child(3)
+                display: none
+            .imgBx
+                width: 75%
 
-            gap: 45px
-            .content
-                flex-direction: column
-                gap: 20px
-                h1
-                    width: 100%
-                    font-size: 2rem
-                    line-height: 1.4
-                    text-justify: justify
-                .imgBx
-                    width: 100%
-                    p
-                        left: 0
-            .btnBx .btnSolid
-                max-width: 100%
+@media (max-width: 390px) 
+    .heading, .subheading
+        text-align: center !important
+    .Hero
+        h1
+            font-size: 1.4rem
+        .imbBx
+
+    .Contact .info
+        width: 100% !important
+        padding-inline: 10px
+        div.wrapper
+            justify-content: space-between !important
+            gap: 0 !important
+        .links
+            width: 100%
+
+            width: 80%
+    
+    
+@media (max-width: 320px) 
+    .Hero
+        h1
+            font-size: 1.1rem
+    
+    .Contact .info
+        width: 100% !important
+        padding-inline: 10px
+        div.wrapper
+            justify-content: space-between !important
+            gap: 0 !important
+        .links
+            width: 100%
+
+
+
+// @media (max-width: 414px) 
+//     body
+//         .container
+//             width: 90%
+//             padding-bottom: 30px
+        
+//         // font-size: 14px
+//         nav .linksBx
+//             display: none
+
+
+//         .Hero 
+//             padding-top: 10px
+//             background: none
+//             // border: 1px solid
+
+//             gap: 45px
+//             .content
+//                 flex-direction: column
+//                 gap: 20px
+//                 h1
+//                     width: 100%
+//                     font-size: 2rem
+//                     line-height: 1.4
+//                     text-justify: justify
+//                 .imgBx
+//                     width: 100%
+//                     p
+//                         left: 0
+//             .btnBx .btnSolid
+//                 max-width: 100%
