@@ -406,6 +406,9 @@ footer {
   .Hero .content h1 {
     font-size: 2.2rem; } }
 @media (max-width: 920px) {
+  .Navbar .linksBx {
+    display: none !important; }
+
   .container {
     width: 90%; }
 
