@@ -443,6 +443,8 @@ footer {
 
   .Navbar .menu-btn {
     display: block !important; }
+    .Navbar .menu-btn .openIcon {
+      display: inline-blockblock !important; }
   .Navbar .linksBx {
     display: none !important; }
 
