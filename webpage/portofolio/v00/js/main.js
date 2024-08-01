@@ -3,7 +3,6 @@ $(document).ready(() => {
     const closeIcon = $("#close-icon");
     const dropdown = $(".dropdown-menu");
 
-    openIcon.css('display', 'block')
     var fun = () => {
         openIcon.toggle()
         closeIcon.toggle()

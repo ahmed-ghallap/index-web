@@ -152,7 +152,7 @@ a.link:before, .num::before {
     .Navbar nav .menu-btn {
       display: none; }
     .Navbar nav #close-icon, .Navbar nav #open-icon {
-      width: 1.4rem; }
+      width: 2rem; }
     .Navbar nav #close-icon {
       display: none; }
     .Navbar nav .dropdown-menu {
@@ -175,8 +175,9 @@ a.link:before, .num::before {
         width: 100%;
         text-align: center;
         padding-block: 1rem; }
-        .Navbar nav .dropdown-menu li a:hover, .Navbar nav .dropdown-menu li a:active {
-          color: white; }
+        .Navbar nav .dropdown-menu li a:hover, .Navbar nav .dropdown-menu li a:active, .Navbar nav .dropdown-menu li a:focus {
+          color: white;
+          background: none; }
         .Navbar nav .dropdown-menu li a {
           text-decoration: none;
           color: black;
