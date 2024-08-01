@@ -23,7 +23,7 @@ html {
   padding-bottom: 50px; }
 
 .heading {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
   text-transform: capitalize; }
 
@@ -438,6 +438,9 @@ footer {
   .Hero .content h1 {
     font-size: 2.2rem; } }
 @media (max-width: 920px) {
+  body .heading {
+    font-size: 1.3rem; }
+
   .Navbar .menu-btn {
     display: block !important; }
   .Navbar .linksBx {
@@ -455,7 +458,7 @@ footer {
     display: none; } }
 @media (max-width: 733px) {
   body {
-    font-size: 14px; }
+    font-size: 14px !important; }
 
   .Hero .content h1 {
     font-size: 1.7rem; }
@@ -483,7 +486,7 @@ footer {
           width: max-content; } }
 @media (max-width: 630px) {
   body {
-    font-size: 13px; }
+    font-size: 13px !important; }
 
   .Navbar .dropdown-menu {
     width: 100% !important; }
