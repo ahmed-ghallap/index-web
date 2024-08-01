@@ -7,8 +7,11 @@
 
 @media (max-width: 920px) 
 
-    .Navbar .linksBx 
-        display: none !important
+    .Navbar 
+        .menu-btn
+            display: block !important
+        .linksBx 
+            display: none !important
     .container
         width: 90%
     .Hero .content 
@@ -53,6 +56,9 @@
 @media (max-width: 630px) 
     body
         font-size: 13px
+    .Navbar .dropdown-menu
+        width: 100% !important
+
     .Hero 
         padding-top: 50px
         gap: 50px
@@ -70,6 +76,12 @@
                 width: 75%
 
 @media (max-width: 390px) 
+    .Navbar .logoBx
+        height: 60px !important
+        .face
+            display: none !important
+        .text
+            // height: 15px
     .heading, .subheading
         text-align: center !important
     .Hero
