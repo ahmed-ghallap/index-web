@@ -1,0 +1,41 @@
+/* ==== ==== ==== Start CSS Varibles ==== ==== ==== */
+
+:root {
+    --text-clr: #f7f3ea;
+    --text-dark-clr: #3c4761;
+
+    --purple: #87509c;
+    --green: #17c2a4;
+    --white: #fff;
+    --yellow: #ffdd99;
+    --orange: #eb7d4b;
+    --red: #d74680;
+    --darkblue: #3c5499;
+    --blue: #30bae7;
+    --lightblue: #e7f1f8;
+
+    --primary-clr: #c8e8e9; 
+    --primary-light-clr: #c8e8e9; 
+
+    --secondary-clr: #c8e8e9; 
+    --secondary-light-clr: #c8e8e9; 
+
+    --action-clr: #5ee6ea; 
+    --action-light-clr: #5ee6ea; 
+}
+
+/* ==== ==== ==== End CSS Varibles ==== ==== ==== */
+/* .container-mobile {
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: .5rem;
+} */
+
+.container {
+    max-width: 1536px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+ }

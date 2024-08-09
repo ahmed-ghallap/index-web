@@ -1,0 +1,30 @@
+/* ==== ==== ==== Start CSS Varibles ==== ==== ==== */
+
+:root {
+    --text-clr: #393939;
+
+    --primary-clr: #c8e8e9; 
+    --primary-light-clr: #c8e8e9; 
+
+    --secondary-clr: #c8e8e9; 
+    --secondary-light-clr: #c8e8e9; 
+
+    --action-clr: #5ee6ea; 
+    --action-light-clr: #5ee6ea; 
+}
+
+/* ==== ==== ==== End CSS Varibles ==== ==== ==== */
+/* .container-mobile {
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: .5rem;
+} */
+
+.container {
+    max-width: 1536px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+ }
