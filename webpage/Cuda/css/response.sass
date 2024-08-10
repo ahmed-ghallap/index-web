@@ -3,96 +3,71 @@
 // max-width:500px  targets 500px and below. "Desctop First"
 // min-width:499px targets 499px ant ubove.  "Mobile First"
 
-.container
-    width: 100%
-    margin-inline: auto
-    padding-inline: .5rem
-
-/* Extra small */
-@media  (min-width: 475px)
-    .container
-        max-width: 475px
-
-/*  Small */
-@media  (min-width: 640px)
-    .container
-        max-width: 640px
+// Desktop container utility class:
+.container 
+    border: 1px solid 
+    max-width: 1536px
+    margin-left: auto
+    margin-right: auto
+    padding-left: 0.5rem
+    padding-right: 0.5rem
 
 
-/*  Medium */
-@media  (min-width: 768px)
-    .container
-        max-width: 768px
+/* 2xl */
+@media (max-width: 1536px) 
+    header > .cover
+        padding-inline: 2rem
+    .container 
+        max-width: 1280px !important
+  
+/* xl */
+@media (max-width: 1280px) 
+    .container 
+        max-width: 1024px !important
 
 
-/*  Larg  */
-@media  (min-width: 1024px)
-    .container
-        max-width: 1024px
+/* lg */
+@media (max-width: 1024px) 
+    .container 
+        max-width: 768px !important
+  
 
 
-/* Extra Larg  */
-@media  (min-width: 1280px)
-    .container
-        max-width: 1280px
+/* md */
+@media (max-width: 768px) 
+    header  
+        nav
+            display: none
+        .menu-icon
+            display: inline-block !important
+    .container 
+        max-width: 640px !important
+  
+/* sm */
+@media (max-width: 640px) 
+    .container 
+        max-width: 475px !important
+    header
+        nav.menu 
+            width: 50% !important
+    main
+        h1
+            br
+                display: none
+    #contact
+        form
+            width: 100% !important
+            div
+                flex-direction: column
 
-
-/* Extra Extra Larg  */
-@media  (min-width: 1536px)
-    .container
-        max-width: 1400px
-
-
-
-// // Desktop container utility class:
-
-// .container {
-//   max-width: 1536px;
-//   margin-left: auto;
-//   margin-right: auto;
-//   padding-left: 0.5rem;
-//   padding-right: 0.5rem;
-// }
-
-// /* 2xl */
-// @media (max-width: 1536px) {
-//   .container {
-//     max-width: 1280px;
-//   }
-// }
-
-// /* xl */
-// @media (max-width: 1280px) {
-//   .container {
-//     max-width: 1024px;
-//   }
-// }
-
-// /* lg */
-// @media (max-width: 1024px) {
-//   .container {
-//     max-width: 768px;
-//   }
-// }
-
-// /* md */
-// @media (max-width: 768px) {
-//   .container {
-//     max-width: 640px;
-//   }
-// }
-
-// /* sm */
-// @media (max-width: 640px) {
-//   .container {
-//     max-width: 475px;
-//   }
-// }
-
-// /* xs */
-// @media (max-width: 475px) {
-//   .container {
-//     width: 100%;
-//   }
-// }
+/* xs */
+@media (max-width: 475px) 
+    .container 
+        width: 100% !important
+    body
+        font-size: .85rem
+    header
+        nav.menu 
+            width: 80% !important
+            left: 2rem
 
