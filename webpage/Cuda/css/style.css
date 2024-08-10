@@ -361,11 +361,13 @@ main > section {
       padding: 1rem;
       border-radius: 4px;
       border: none;
-      outline: none; }
+      outline: none;
+      color: white; }
   #contact > .cover form textarea::placeholder {
     font-size: 0.9rem;
     color: white; }
   #contact > .cover form textarea {
+    color: white;
     border: none;
     outline: none;
     background: #273a71;
