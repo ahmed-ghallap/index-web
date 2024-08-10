@@ -242,6 +242,7 @@ main > section {
       font-size: 2.3rem;
       border-radius: 50%;
       background: conic-gradient(var(--clr) 4deg, #ededed 0deg);
+      transition: 300ms;
       display: grid;
       place-items: center; }
     #skills > .cover .cards-holder .card .prograss::after {
@@ -404,7 +405,6 @@ footer > .cover ul {
 
 /*  ======================================================================== */
 .container {
-  border: 1px solid;
   max-width: 1536px;
   margin-left: auto;
   margin-right: auto;
