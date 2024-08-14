@@ -463,6 +463,10 @@ footer > .cover ul {
     text-align: left !important;
     text-align-last: left !important; }
 
+  #team .card p {
+    text-align: justify !important;
+    text-align-last: center !important; }
+
   #services .card {
     padding-inline: 2rem;
     gap: 2rem;
@@ -471,7 +475,7 @@ footer > .cover ul {
     #services .card p {
       text-align: center !important; }
     #services .card img {
-      width: 42% !important; } }
+      width: 30% !important; } }
 /* xs */
 @media (max-width: 475px) {
   .container {
