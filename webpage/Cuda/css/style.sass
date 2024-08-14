@@ -61,12 +61,12 @@ header > .cover
         position: absolute
         width: 44%
         margin-inline: auto
-        border: 1px solid var(--yellow)
-        box-shadow: 0 4px 0 var(--yellow)
-        overflow: hidden
+        border: 1px solid var(--green)
+        border-top: none
+        box-shadow: 0 4px 0 var(--green)
         top: 80px
         right: 2rem
-        background: rgba(250, 250, 250, .1)
+        background: var(--darkblue)
         border-radius: 10px
         backdrop-filter: blur(30px)
         font-size: 14px
@@ -76,6 +76,8 @@ header > .cover
             li 
                 width: 100%
                 a
+                    &:hover
+                        background: var(--green)
                     text-align: center
                     width: 100%
                     padding-block: 1em

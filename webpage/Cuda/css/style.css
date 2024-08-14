@@ -54,12 +54,12 @@ header > .cover {
     position: absolute;
     width: 44%;
     margin-inline: auto;
-    border: 1px solid var(--yellow);
-    box-shadow: 0 4px 0 var(--yellow);
-    overflow: hidden;
+    border: 1px solid var(--green);
+    border-top: none;
+    box-shadow: 0 4px 0 var(--green);
     top: 80px;
     right: 2rem;
-    background: rgba(250, 250, 250, 0.1);
+    background: var(--darkblue);
     border-radius: 10px;
     backdrop-filter: blur(30px);
     font-size: 14px; }
@@ -72,6 +72,8 @@ header > .cover {
           text-align: center;
           width: 100%;
           padding-block: 1em; }
+          header > .cover nav.menu ul li a:hover {
+            background: var(--green); }
   header > .cover .menu-icon {
     display: none;
     height: 32px;
@@ -451,7 +453,22 @@ footer > .cover ul {
   #contact form {
     width: 100% !important; }
     #contact form div {
-      flex-direction: column; } }
+      flex-direction: column; }
+
+  section .card {
+    width: 100% !important; }
+    section .card p {
+      text-align: justify !important;
+      text-align-last: center; }
+
+  #services .card {
+    padding-inline: 2rem;
+    gap: 2rem;
+    width: 100% !important;
+    display: flex;
+    align-items: center; }
+    #services .card p {
+      text-align: center !important; } }
 /* xs */
 @media (max-width: 475px) {
   .container {

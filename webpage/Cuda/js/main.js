@@ -9,18 +9,17 @@ menuIcon.click(() => {
 });
 const spanHeight = parseInt(values.eq(0).css('height'));
 
-window.addEventListener('scroll', function foo () {
+$(window).on('scroll', () => {
     var windowHeight = window.innerHeight;
 
     var top = Math.ceil(values.get(0).getBoundingClientRect().top);
     if ((top + spanHeight - windowHeight) <= 0 ) {
-    console.log("hello");
         values
         .parents(".prograss")
         .each((index, el) => {
             const v = parseInt($(el).data('value'))
             circleAnimation(el, v)
-            window.removeEventListener('scroll', foo)
+            $(this).off('scroll')
         })
     }
 });
