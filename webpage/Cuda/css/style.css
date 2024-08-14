@@ -456,7 +456,7 @@ footer > .cover ul {
       flex-direction: column; }
 
   section .card {
-    width: 100% !important; }
+    max-width: 90% !important; }
     section .card p {
       text-align: justify !important;
       text-align-last: center; }
@@ -464,11 +464,12 @@ footer > .cover ul {
   #services .card {
     padding-inline: 2rem;
     gap: 2rem;
-    width: 100% !important;
     display: flex;
     align-items: center; }
     #services .card p {
-      text-align: center !important; } }
+      text-align: center !important; }
+    #services .card img {
+      width: 42% !important; } }
 /* xs */
 @media (max-width: 475px) {
   .container {
