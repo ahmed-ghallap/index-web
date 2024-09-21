@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400;500;600;700;800&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(#34abe6 , BlueViolet , MediumBlue);
+    scroll-behavior: smooth;
+    direction: rtl;
+}
+
+.html-home {
+    height: 100%;
+}
+
+html, body {
+    margin: 0;
+}
+
+.azkar-body {
+ background: linear-gradient(#12c2e9, #c471ed, #f64f59);
+}
+
+.home-body {
+    height: 100%;
+    padding: 26px 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    position: absolute;
+    top: 100px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    font-style: italic;
+
+}
+
+.main-nav {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+
+.main-nav  * {
+    font-size: 1.3em;
+    font-weight: 700;
+    list-style: none;
+    border-radius: 50px;
+}
+
+
+h1 {
+    font-family: 'Reem Kufi Fun', sans-serif;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-style: italic;
+    color: #e5e5e5;
+    letter-spacing: 3px;
+
+}
+
+.card-holder {
+    /* font-family: 'Changa', sans-serif; */
+    /* font-family: 'Amiri Quran', serif; */
+    font-family: 'El Messiri', sans-serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px 15px;
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 0 5px 3px #e3ffa3;
+}
+
+.card {
+    font-size: 1.3em;
+    font-weight: 550;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    perspective: 1000px;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card:hover 
+
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn > a {
+    font-family: 'Changa', sans-serif;
+    display: inline-block;
+    padding: 2px 8px;
+    text-align: center;
+    width: 70px;
+    color: antiquewhite;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background-color: orange;
+    border: 2px solid dodgerblue;
+    border-radius: 50px;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 55px;
+    padding: 0 10px;
+    background-color: white;
+    /* box-shadow: 0 7px limegreen; */
+
+}
+
+#sub-nav {
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    background-color: #eee;
+    border-radius: 0 0 9px 9px;
+    box-shadow: 0 2px limegreen;
+
+}
+#dodo {
+    display: flex;
+    align-content: center;
+}
+button {
+    
+    margin: auto;
+    height: 100%;
+    background: transparent;
+    margin-left: 4px;
+    font-size: 1.1em;
+    border: none;
+
+}
+img {
+    width: 40px;
+}
+#big-icon {
+    color: red;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+nav > a {
+    /* font-family: 'Reem Kufi Fun', sans-serif; */
+    font-family: 'El Messiri', sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-decoration: none;
+
+    text-align: center;
+    overflow:hidden;
+
+    max-width: 200px;
+    padding: 7px;
+    margin: 6px 0;
+
+    border-radius: 8px;   
+    
+}
+
+.btn-night {
+    background-color: white;
+    border: 1px solid #c471ed;
+    color: #c471ed;
+}
+.btn-morning {
+    background-color: white;
+
+    border: 1px solid YellowGreen;
+    color: YellowGreen ;
+}
+
+.btn-night:hover {
+    background-color: #c471ed;
+    color: white;
+}
+.btn-morning:hover {
+    background-color: YellowGreen;
+    color: white;
+}
+
+.icon {
+    color: red;
+    font-size: 2.1em;
+    padding: 0;
+}
+
+/* flip card */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
